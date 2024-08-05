@@ -22,33 +22,92 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light ">
       <Layout className='pt-0 md:pt-16 sm:pt-8'>
         <div className="flex items-center justify-between w-full lg:flex-col">
-          <div className='w-1/2 md:w-full'>
-            <Image src={profilePic} alt="developer image" className="w-full h-auto md:inline-block md:w-full" 
-            priority
-            sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 
-            50vw'
-            />
-          </div>
-          <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
-            <AnimatedText text="Turning your ideas into Reality with Code and Design." className='!text-6xl !text-left
-            xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-4xl' />
-            <p className='my-4 text-base font-medium'>As a skilled full-stack developer, I am dedicated to turning ideas into innovate products. 
-              Check out this site to see my latest projects and articles. </p> 
-              <div className='flex items-center self-start mt-2 lg:self-center'>
-            <Link href="/dummy.pdf" target={"_blank"}
-            className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
-            border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark
-            '
-            download={true}
-            >CV <LinkArrow className="w-6 ml-1" /></Link>
-            <Link href="mailto:mlynagh111@gmail.com" 
-            className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light'
-            >Contact </Link>
-          </div>
-          </div>
+            <div className='w-1/2 md:w-full'>
+              <Image src={profilePic} alt="developer image" className="w-full h-auto md:inline-block md:w-full" 
+              priority
+              sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 
+              50vw'
+              />
+            </div>
+            <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-left md:text-left'>
+              <AnimatedText text="Are you Looking For A Freelance Software Developer?" className='!text-6xl !text-left
+              xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-4xl' />
+              <p className='my-4 text-base font-medium'>
+              Do you need: </p> 
+              <p className='my-4 text-base'>
+              A reliable, full stack, Software Developer who will deliver your project on time and on budget? </p> 
+              <p className='my-4 text-base'>
+                Guaranteed, professional development from someone who wants to see your business grow and succeed?
+               </p> 
+               <p className='my-4 text-base'>
+                You're in the right place! Here's what you can do next: <br></br><br></br>
+               Option A: Hire me today, just fill in the contact form below. <br></br><br></br>
+              Option B: Keep reading below to figure out why I am the right person for you.
+               </p> 
+               
+
+                  <div className='flex items-center self-start mt-2 lg:self-center'>
+                    {/* <Link href="/dummy.pdf" target={"_blank"}
+                    className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+                    border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark
+                    '
+                    download={true}
+                    >CV <LinkArrow className="w-6 ml-1" /></Link> */}
+                    <Link href="mailto:mikelynagh@yahoo.com"
+                    className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+                    border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark
+                    '
+                    download={true}
+                    >Contact <LinkArrow className="w-6 ml-1" /></Link>
+                    {/* <Link href="mailto:mikelynagh@yahoo.com" 
+                    className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light'
+                    >Contact </Link> */}
+                  </div>
+            </div>
           
-        </div>
+      </div>
         <ContactForm />
+        <div className="flex items-center justify-between w-full lg:flex-col">
+            
+            <div className='w-full flex flex-col items-center self-center lg:w-full lg:text-left md:text-left'>
+              <AnimatedText text="What Can An Expert Web Developer Do For You?" className='!text-4xl !text-left
+              xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-4xl' />
+              <p className='my-4 text-base font-medium'>
+              Common scenarios where I can deliver successful projects: </p> 
+                <p className='my-4 text-base'>
+                  1. Your business needs a new website so that you can get more clients and sell more stuff. <br></br><br></br>
+                2. You need to update your current website and don't want to waste time messing with technical issues.</p> 
+                <p className='my-4 text-base'>
+                3. You require a new plugin or custom 3rd party integration to be developed on your website to make your job or your staff's job easier.</p> 
+                <p className='my-4 text-base'>
+                4. You need a Web Developer to work alongside a designer to plan the best approach for your project.</p> 
+                <p className='my-4 text-base'>
+                5. You want to grow the online aspect of your business but you're not sure where to start.
+                <br></br><br></br>
+                6. You have a paper task that takes up hours every week and you want to automate it so that you can get your life back.</p>  
+              <p className='my-4 text-base font-medium'>
+              If one of those situations describes your current needs, you're in the right place. <br></br><br></br> Most business owners don't want to be sat in front of a laptop late at night or on weekends messing with technical problems. I get that. Let me help you to solve that problem.  You can hire me to help today.  </p> 
+             
+                  <div className='flex items-center self-start mt-2 lg:self-center'>
+                    {/* <Link href="/dummy.pdf" target={"_blank"}
+                    className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+                    border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark
+                    '
+                    download={true}
+                    >CV <LinkArrow className="w-6 ml-1" /></Link> */}
+                    {/* <Link href="mailto:mikelynagh@yahoo.com" 
+                    className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light'
+                    >Contact </Link> */}
+                    <Link href="mailto:mikelynagh@yahoo.com"
+                    className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+                    border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark
+                    '
+                    download={true}
+                    >Contact <LinkArrow className="w-6 ml-1" /></Link>
+                  </div>
+            </div>
+          
+      </div>
       </Layout>
 
       </main>

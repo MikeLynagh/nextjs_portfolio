@@ -25,16 +25,16 @@ const Education = () => {
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     
                         <Details
-                        course="Software Engineer" company="Google"
-                        time="2022-Present" address="Mountain View, CA"
-                        content="worked on a team responsible for developing new features for Google's search engine."
+                        course="PostGraduate Diploma (Cloud Computing and Software Development)" company="University of Galway"
+                        time="2023-Present" address="Galway, Ireland"
+                        content="Expected to graduate with a First Class Honours."
                          />
                     
                     
                         <Details
-                        course="Software Engineer" company="Google"
-                        time="2022-Present" address="Mountain View, CA"
-                        content="worked on a team responsible for developing new features for Google's search engine."
+                        course="Higher Diploma in Computing (Software Development) " company="Dublin Business School"
+                        time="2022-Present" address="Dublin, Ireland"
+                        content="Graduated with a First Class Honours"
                          />
                     
                 </ul>

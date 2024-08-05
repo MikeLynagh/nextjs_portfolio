@@ -24,7 +24,7 @@ const Experience = () => {
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     
                         <Details
-                        position="Software Engineer" company=" Google"
+                        position="Freelance Software Engineer" company=" Google"
                         time="2022-Present" address="Mountain View, CA"
                         work="worked on a team responsible for developing new features for Google's search engine."
                          />
