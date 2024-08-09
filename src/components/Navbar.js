@@ -69,25 +69,25 @@ const Navbar = () => {
                 <nav>
                     <CustomLink href="/" title="Home" className="mr-4"/>
                     <CustomLink href="/about" title="About" className="mx-4"/>
-                    <CustomLink href="/projects" title="Project" className="mx-4"/>
-                    <CustomLink href="/articles" title="Articles" className="ml-4"/>
+                    {/* <CustomLink href="/projects" title="Project" className="mx-4"/> */}
+                    {/* <CustomLink href="/articles" title="Articles" className="ml-4"/> */}
                 </nav>
 
 
                 <nav className="flex items-center justify-center flex-wrap">
-                    <motion.a href="https://twitter.com" target={"_blank"}
+                    <motion.a href="https://x.com/mike_lynagh" target={"_blank"}
                     whileHover={{y:-4}}
                     whileTap={{scale:0.9}}
 
                     className="w-6 mr-3"
                 >
                     <TwitterIcon /></motion.a>
-                    <motion.a href="https://github.com" target={"_blank"}
+                    <motion.a href="https://github.com/MikeLynagh" target={"_blank"}
                     whileHover={{y:-4}}
                     whileTap={{scale:0.9}}
                     className="w-6 mx-3 bg-light rounded-full dark:bg-light"
                     ><GithubIcon /></motion.a>
-                    <motion.a href="https://linkedin.com" target={"_blank"}
+                    <motion.a href="https://www.linkedin.com/in/michael-lynagh/?originalSubdomain=ie" target={"_blank"}
                     whileHover={{y:-4}}
                     whileTap={{scale:0.9}}
 
@@ -119,8 +119,8 @@ const Navbar = () => {
                 <nav className="flex items-center flex-col justify-center">
                     <CustomMobileLink href="/" title="Home" className="" toggle={handleClick}/>
                     <CustomMobileLink href="/about" title="About" className="" toggle={handleClick}/>
-                    <CustomMobileLink href="/projects" title="Project" className="" toggle={handleClick}/>
-                    <CustomMobileLink href="/articles" title="Articles" className="" toggle={handleClick}/>
+                    {/* <CustomMobileLink href="/projects" title="Project" className="" toggle={handleClick}/>
+                    <CustomMobileLink href="/articles" title="Articles" className="" toggle={handleClick}/> */}
                 </nav>
     
     

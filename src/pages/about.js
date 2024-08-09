@@ -3,7 +3,7 @@ import Head from "next/head"
 import Image from "next/image"
 import AnimatedText from "@/components/AnimatedText"
 import Layout from "@/components/Layout"
-import profilePic from "../../public/images/profile/developer-pic-2.jpg"
+import profilePic from "../../public/images/profile/Selfie.jpeg"
 import Skills from "@/components/Skills"
 import Experience from "@/components/Experience"
 import Education from "@/components/Education"
@@ -40,7 +40,7 @@ const about = () => {
                     </p>
                     
                     <p className="font-medium">
-                        This website is my little home on the internet. Feel free to browse around. Most of my writing is summaries of my learning. You might find it helpful. You can follow me on twitter @MikeLynagh. 
+                        This website is my little home on the internet. Feel free to browse around. Most of my writing I share are summaries of my own learning. You might find it helpful. You can follow me on twitter @MikeLynagh. 
                     </p>
                 </div>
                 <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8
