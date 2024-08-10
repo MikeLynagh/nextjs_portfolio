@@ -57,12 +57,13 @@ export default function Home() {
             </ul>
     
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href="#contact-form"
-                  className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
-                  border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light'
+              <Link href="mailto:mikelynagh@yahoo.com?subject=Inquiry for Web Dev"
+
+                className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
+                border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light'
                 >
-                  Contact <LinkArrow className="w-6 ml-1" />
-                </Link>
+                Contact <LinkArrow className="w-6 ml-1" />
+              </Link>
               </div>
             </div>
           </div>
@@ -91,7 +92,8 @@ export default function Home() {
               If one of those situations describes your current needs, you're in the right place. Most business owners don't want to be sat in front of a laptop late at night or on weekends messing with technical problems. I get that. Let me help you to solve that problem. You can hire me to help today.
             </p> 
             <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href="#contact-form"
+            <Link href="mailto:mikelynagh@yahoo.com?subject=Inquiry for Web Dev"
+
                   className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                   border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light'
                 >
