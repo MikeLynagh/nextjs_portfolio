@@ -80,6 +80,7 @@ const about = () => {
                     </div>
                 </div> */}
 
+
             </div>
             <Skills />
             {/* <Experience /> */}
