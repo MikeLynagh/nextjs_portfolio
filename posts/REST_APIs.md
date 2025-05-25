@@ -108,15 +108,15 @@ Avoid deep nesting beyond 2–3 levels. It gets hard to manage and understand.
 
 For most day to day tasks, the list below should cover your use cases. Be familiar with these. Use appropriate HTTP response codes to indicate the outcome of a request:
 
-CODE    MEANING 
-200     OK 
-201     Created 
-400     Bad request (invalid input)
-401     Unauthorised (not logged in)
-403     Forbidden (no permission)
-404     Not Found
-500     Internal Server Error
-502     Bad Gateway 
+- CODE    MEANING 
+- 200     OK 
+- 201     Created 
+- 400     Bad request (invalid input)
+- 401     Unauthorised (not logged in)
+- 403     Forbidden (no permission)
+- 404     Not Found
+- 500     Internal Server Error
+- 502     Bad Gateway 
 
 ---
 
