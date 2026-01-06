@@ -5,7 +5,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/icons";
-import groupbook from "../../public/images/projects/groupbook.jpg";
+import physioAIImage from "../../public/images/projects/physioAIImage.jpg";
 import GAABoard from "../../public/images/projects/GAABoard.jpg";
 import {motion} from "framer-motion"
 
@@ -64,10 +64,12 @@ const Project = ({title, type, img, link, github}) => {
                     <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-lg">{title}</h2>
                 </Link>
                 <div className="mt-2 flex items-center">
-                    <Link href={github} target="_blank" className="w-10">
-                        <GithubIcon />  
-                    </Link>
-                    <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold">Visit 
+                    {github && (
+                        <Link href={github} target="_blank" className="w-10">
+                            <GithubIcon />  
+                        </Link>
+                    )}
+                    <Link href={link} target="_blank" className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold">Visit Project
                     </Link>
                 </div>
             </div> 
@@ -105,12 +107,12 @@ const projects = () => {
                     <div className="col-span-6 sm:col-span-12">
                     <Project 
                         
-                        title="GroupBook Web App"
-                        img={groupbook}
-                        summary="a project using React. Its shows details about cryptocurrency. You can easily conver the price in your local currency."
-                        link="https://groupbooking.netlify.app/"
-                        github="https://github.com/MikeLynagh/groupbook"
-                        type="Built with ReactJS and Supabase"
+                        title="Physio AI Assistant"
+                        img={physioAIImage}
+                        summary="A chat interface that creates specific home exercise programmes based specifically on your requirements."
+                        link="https://physio-ai-brown.vercel.app/"
+                        github="https://github.com/MikeLynagh/physio-ai"
+                        type="Built with ReactJS"
                         />
                     </div>
                     <div className="col-span-6 sm:col-span-12">
