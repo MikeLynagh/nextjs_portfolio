@@ -1,96 +1,62 @@
-import React from "react"
-import Head from "next/head"
 import Image from "next/image"
-import AnimatedText from "@/components/AnimatedText"
+import Link from "next/link"
 import Layout from "@/components/Layout"
+import Seo from "@/components/Seo"
 import profilePic from "../../public/images/profile/Selfie.jpeg"
-import Skills from "@/components/Skills"
-import Experience from "@/components/Experience"
-import Education from "@/components/Education"
-import TransitionEffect from "@/components/hooks/TransitionEffect"
-import ContactForm from "@/components/ContactForm"
 
-const about = () => {
-    return(
-        <>
-         {/* fill this in for SEO */}
-        <Head>
-            <title>Mike Lynagh | About Page</title>
-            <meta name="description" content="any description" />
-        </Head>
-        <TransitionEffect />
-        <main className="flex w-full flex-col items-center justify-center dark:text-light">
-            <Layout className="pt-16 ml-20">
-            <AnimatedText text="About Mike Lynagh" className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-5xl sm:mb-8" />
-            <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-                <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
-                    <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">About me</h2>
-                    <p className="font-medium ">
-                    Web Developer, Software Engineer. <br/><br />
+export default function About() {
+  return (
+    <>
+      <Seo
+        title="About"
+        description="About Mike Lynagh, a software engineer based in Galway, Ireland."
+        path="/about"
+      />
+      <main id="main-content">
+        <Layout className="py-14 sm:py-20">
+          <header className="max-w-3xl">
+            <p className="eyebrow">About</p>
+            <h1 className="mt-4 text-4xl font-semibold tracking-[-0.03em] sm:text-6xl">About Mike Lynagh</h1>
+          </header>
 
-                    Hi, I'm Mike! <br/>
-                    I became interested in programming a few years back and decided to go back to university as a mature student to learn more about programming and software engineering. So here we are. <br></br><br></br>
-
-                    Enough about me. You're here to figure out If I can help your business. Right? <br></br><br></br>
-
-                    If you're looking for a pretty fast website for your business, I have gained a lot of experience with Next.js which is a really good tool to build super fast websites. 
-                    I am based in Galway, Ireland but the good news for you is that I am based remotely, as long as I have power and wifi, I am good to go. 
-
-                    <br></br><br></br>Currently, I am available for hire. If you need a reliable software developer, just get in touch. 
-                    </p>
-                    
-                    <p className="font-medium">
-                        This website is my little home on the internet. Feel free to browse around. Most of my writing I share are summaries of my own learning. You might find it helpful. You can follow me on twitter @MikeLynagh. 
-                    </p>
-                </div>
-                <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8
-                dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
-                    <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark
-                    dark:bg-light" />
-                    
-                    <Image src={profilePic} alt="Mike Lynagh" className="w-full h-auto rounded-2xl" 
-                    priority
-                    sizes='(max-width: 768px) 100vw, (max-width:1200px) 50vw, 
-                    33vw'
-                    />
-                </div>
-                {/* <div className="col-span-2 flex flex-col items-center justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
-                    <div className="flex flex-col justify-center xl:items-center">
-                        <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl">
-                            50+
-                        </span>
-                        <h2 className="text-xl font-medium capitalize text-dark/75 xl:items-center">satisfied clients</h2>
-                    </div>
-
-                    <div className="flex flex-col items-center justify-center">
-
-                    <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl">
-                            40+
-                        </span>
-                        <h2 className="text-xl font-medium capitalize text-dark/75 xl:items-center">projects completed</h2>
-                    </div>
-
-                    <div className="flex flex-col items-center justify-center">
-
-                    <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl">
-
-                            4+
-                        </span>
-                        <h2 className="text-xl font-medium capitalize text-dark/75  xl:items-center">years of experience</h2>
-                    </div>
-                </div> */}
-
-
+          <div className="mt-12 grid gap-10 md:grid-cols-[minmax(0,1.4fr)_minmax(16rem,0.8fr)] md:gap-14 lg:gap-20">
+            <div className="space-y-6 text-lg leading-8 text-muted">
+              <p>
+                Hi, I&apos;m Mike. I&apos;m a software engineer based in Galway, Ireland, where I work at Liberty IT. I live here with my wife and our two children.
+              </p>
+              <p>
+                I didn&apos;t take the most direct route into software. Before this, I worked as a physiotherapist. I enjoyed the problem-solving side of that job: listening properly, working out what was going on and finding a practical way forward. After becoming interested in programming, I went back to university as a mature student and spent a few years learning while still working. In 2025, I made the move into software engineering.
+              </p>
+              <p>
+                Since joining Liberty IT, I&apos;ve worked across frontend and backend development, integrations and production software. More recently, a lot of my curiosity has been around applied AI: where it is genuinely useful, how teams can adopt it in a practical way and what it changes about building software. I&apos;ve contributed to workshops, hackathons and technical presentations, and I was part of a team that won the National AI Challenge.
+              </p>
+              <p>
+                Outside work, I like building things of my own. One of those is <Link href="/work#physioagent" className="text-link text-ink">PhysioAgent</Link>, an experimental application that brings together my previous experience in physiotherapy and what I&apos;m learning about AI product development. It is still an experiment, which is part of the appeal. Building small products is a good way to find the gaps between an idea that sounds useful and software that is actually useful.
+              </p>
+              <p>
+                This website is my little home on the internet. I use it to write about software, AI, books, career changes, projects and whatever else I want to think through. I&apos;m not trying to turn every interest into a professional identity. I mainly want a place to keep useful things, share what I learn and look back at how my thinking changes over time.
+              </p>
+              <p>
+                Most of my time goes to family and exercise. Life with two children is busy.
+              </p>
             </div>
-            <Skills />
-            {/* <Experience /> */}
-            <Education />
-            <ContactForm />
-            </Layout>
-        </main>
-        </>
 
-    )
+            <div className="md:order-last">
+              <div className="overflow-hidden rounded-2xl border border-line bg-surface p-2">
+                <Image
+                  src={profilePic}
+                  alt="Mike Lynagh"
+                  priority
+                  placeholder="blur"
+                  sizes="(max-width: 768px) 100vw, 36vw"
+                  className="aspect-[4/5] w-full rounded-xl object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+        </Layout>
+      </main>
+    </>
+  )
 }
-
-export default about

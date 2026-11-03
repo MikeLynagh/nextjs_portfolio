@@ -1,21 +1,31 @@
-import React from "react";
-import Layout from "./Layout";
-import Link from "next/link";
+const links = [
+  { href: "mailto:mikelynagh@yahoo.com", label: "Email" },
+  { href: "https://www.linkedin.com/in/michael-lynagh/", label: "LinkedIn" },
+  { href: "https://github.com/MikeLynagh", label: "GitHub" },
+]
 
-const Footer = () => {
-    return(
-        <footer className="w-full border-t-2 border-solid border-dark
-        font-medium text-lg dark:text-light dark:border-light sm:text-base 
-        ">
-            <Layout className="py-8 flex items-center justify-between lg:flex-col">
-                <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
-                <div className="flex items-center underline">
-                    Built by Mike Lynagh
-                </div>
-                <Link href="/">Say Hello </Link>
-            </Layout>
-        </footer>
-    )
+export default function Footer() {
+  return (
+    <footer className="mt-20 border-t border-line sm:mt-28">
+      <div className="site-container flex flex-col gap-5 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+        <p>© {new Date().getFullYear()} Mike Lynagh. Built in Galway.</p>
+        <nav aria-label="Contact links">
+          <ul className="flex flex-wrap gap-x-5 gap-y-2">
+            {links.map(({ href, label }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  target={href.startsWith("http") ? "_blank" : undefined}
+                  rel={href.startsWith("http") ? "noreferrer" : undefined}
+                  className="transition-colors hover:text-ink"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  )
 }
-
-export default Footer

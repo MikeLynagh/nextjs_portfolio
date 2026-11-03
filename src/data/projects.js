@@ -1,0 +1,55 @@
+export const projects = [
+  {
+    slug: "physioagent",
+    title: "PhysioAgent",
+    label: "Independent project · Experimental MVP",
+    description: "An AI-assisted tool for creating structured home exercise programmes, built from a problem I understood from my previous work in physiotherapy.",
+    problem: "Creating a useful exercise programme can involve repetitive work: selecting exercises, writing clear instructions and preparing something that can be shared with a patient.",
+    approach: "I built a chat-style workflow that generates a structured programme, adds exercise videos and creates a PDF that can be previewed and shared.",
+    technologies: ["React", "Node.js", "Express", "DeepSeek API", "Supabase", "YouTube API"],
+    image: "/images/projects/physioAIImage.jpg",
+    imageAlt: "PhysioAgent application preview",
+    links: [
+      { href: "/posts/PhysioRehabAIapp", label: "Read how I built it" },
+    ],
+  },
+  {
+    slug: "mytutor",
+    title: "MyTutor",
+    label: "Independent project · AI learning prototype",
+    description: "A full-stack learning application that turns an open-ended goal into a structured learning mission with objectives, resources, lessons, practice, feedback and progress tracking.",
+    problem: "General-purpose AI chat tools can explain a topic, but they do not naturally provide a structured learning path or track evidence of progress over time.",
+    approach: "I built a Next.js frontend and FastAPI backend with planning, resource curation, lesson generation and evaluation workflows. I also added mock providers, Docker support and evaluation scripts for testing workflow behaviour and lesson quality.",
+    technologies: ["Next.js", "TypeScript", "FastAPI", "Python", "SQLite", "Docker"],
+    links: [
+      { href: "https://www.youtube.com/watch?v=3F_TzH5nPfI", label: "Watch the demo" },
+    ],
+  },
+  {
+    slug: "libertylumen",
+    title: "LibertyLumen",
+    label: "Team project · National AI Challenge winner",
+    description: "A household energy tool created with a team of engineers for Ireland's National AI Challenge.",
+    problem: "Energy usage and plan information can be difficult to interpret when you are trying to understand where your household could make changes.",
+    approach: "The project lets people add home energy information, explore their usage and compare plans using machine learning and AI-assisted recommendations.",
+    technologies: ["Applied AI", "Machine learning", "Data visualisation"],
+    links: [
+      { href: "/posts/Annual_Review_2025", label: "Read the 2025 review" },
+    ],
+  },
+  {
+    slug: "gaa-coachboard",
+    title: "GAA Online CoachBoard",
+    label: "Independent project",
+    description: "A simple online tactics board for planning and explaining GAA drills and match situations.",
+    problem: "Coaches need a quick visual way to move players around a pitch and communicate an idea without specialist software.",
+    approach: "I built a focused browser-based board with React, keeping the interaction direct and the interface deliberately simple.",
+    technologies: ["React", "JavaScript"],
+    image: "/images/projects/GAABoard.jpg",
+    imageAlt: "GAA Online CoachBoard interface",
+    links: [
+      { href: "https://mikelynagh.github.io/GAACoachBoard/", label: "Open the project" },
+      { href: "https://github.com/MikeLynagh/GAACoachBoard", label: "View code" },
+    ],
+  },
+]
